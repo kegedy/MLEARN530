@@ -1,0 +1,8 @@
+UWID, City
+kegedy, AnnArbor
+
+1) Assuming the activations of the layer above consists of a sequence of embeddings with (d_model=) 1024 floating-point values per embedding, and the desired dimensionality of the feed-forward expansion is (d_ff=) 4096, what would be the dimensions of the weight matrices for a transformer block?
+
+d_ff = 4*d_m
+
+Then W = [rows,cols] = [1024,1024]

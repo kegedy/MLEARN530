@@ -1,0 +1,6 @@
+UWID, City
+kegedy, AnnArbor
+
+1) params = 4 * ((size_of_input + bias) * size_of_output + size_of_output^2)
+
+params = 4*(1024*1024 + 1024^2) = 8388608

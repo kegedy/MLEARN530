@@ -1,0 +1,14 @@
+UWID, City
+kegedy, AnnArbor
+
+1) 
+a) Which model did you choose?  
+     RobertaEmbeddings
+b) What is the size of the vocabulary?    
+     50,265 
+c) How many features are used for each token?
+     1,024
+d) How many parameters are there for the word embeddings?
+     51,471,360
+e) How much memory is consumed to store these parameters?  [Assume float32 representation for the parameters.]
+    205,885,440 bytes

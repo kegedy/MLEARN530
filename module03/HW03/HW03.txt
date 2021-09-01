@@ -1,0 +1,7 @@
+UWID, City
+kegedy, AnnArbor
+
+Would we expect this "deep" model (a model with more than one hidden layer) to beat (be more accurate than) a multinomial logistic regression model; i.e. would it beat a model defined as ... Why or why not?
+
+The neural network creates an approximation of the target response. 
+More layers provide greater capacity for the neural network to approximate the response.

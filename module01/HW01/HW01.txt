@@ -1,0 +1,39 @@
+x = -0.10       # our input variable
+y = -0.10       # our output variable
+w =  1.00       # the actual parameter
+w_hat = 1.10    # our current estimate of the parameter
+learning rate = 0.1
+y_hat = w_hat * x
+y = w * x
+
+
+a) mean squared error loss = (y-y_hat)^2
+                           = (-0.10 - (1.10*-0.10))^2
+                           = (-0.10 - (-0.11))^2
+                           = (0.01)^2
+                           = 0.0001
+
+
+b) gradient = (partial derivative of loss with respect to activation)
+              * (partial derivative of activation with respect to product)
+              * (partial derivative of product with respect to weight)
+
+gradient(loss, w_hat) = (2*(w_hat*x - w*x)) * 1 * x
+                      = 2 * ((1.1*-0.10) - (1*-0.10)) * 1 * -0.10
+                      = 2 * (-0.11 - (-0.10)) * 1 * -0.10
+                      = 2 * (0.01) * 1 * -0.10
+                      = 2 * (0.01) * -0.1
+                      = 0.002
+
+
+c) w_hat_updated = w-hat - laerning_rate * gradient(loss, w_hat)
+                 = 1.1 - (0.1 * 0.002)
+                 = 1.0998
+
+
+d) iterated mean squared error loss = (y-y-hat)^2
+                                    = (-0.10 - (1.0998*-0.10))^2
+                                    = 0.0000996004
+
+
+Learning has reduced the loss function!

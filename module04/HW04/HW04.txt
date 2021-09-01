@@ -1,0 +1,17 @@
+UWID, City
+kegedy, AnnArbor
+
+1a.
+for i in range(Y.shape[0]):
+  for j in range(Y.shape[1]):
+    Y[i,j] = np.sum(X_padded[i:(i+3),j:(j+3)]*F)
+    
+[[0.319, 0.492, 0.479, 0.237],
+ [0.378, 0.688, 0.907, 0.537],
+ [0.418, 0.783, 0.966, 0.417],
+ [0.192, 0.479, 0.559, 0.399]]
+ 
+ 1b. What is the max pooling output for the convolution output if we use pool_size = 2,2) and stride = (2,2)?
+ 
+ [[0.688, 0.907]
+  [0.783, 0.966]]
